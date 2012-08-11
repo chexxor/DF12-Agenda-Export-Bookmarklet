@@ -80,8 +80,12 @@ window.sessionCsvFromSessionDetails = function(sessionDetailObj) {
 window.showTextInCloudPanel = function(contentToShow) {
 
 	//Pre-render
-	console.log('post-render');
+	//console.log('contentToShow: ' + contentToShow);
 	$Cloud.destroyPanel();
+
+	var htmlToShow = contentToShow.replace(/\r\n/g, "<br>");
+
+	//console.log('htmlToShow: ' + htmlToShow);
 
 	//Render panel
 	$('#loadingMask').show().one('click', $Cloud.destroyPanel);
@@ -95,7 +99,7 @@ window.showTextInCloudPanel = function(contentToShow) {
 
 	//Build template from its elements.
 	var detailView = detailViewWrapperHtml.replace('WRAPPED_ELEMENTS', panelHeaderbarHtml + panelScrollerHtml);
-	var detailViewComplete = detailView.replace('DISPLAY_CONTENT_HERE', contentToShow);
+	var detailViewComplete = detailView.replace('DISPLAY_CONTENT_HERE', htmlToShow);
 
 	var htmlForPanel = detailViewComplete;
 	//console.log('htmlForPanel: ', htmlForPanel);
@@ -110,7 +114,6 @@ window.showTextInCloudPanel = function(contentToShow) {
 	}
 
 	//Post-render
-	console.log('post-render');
 	//$Cloud.handlePanelScroll();
 
 }
@@ -119,7 +122,7 @@ window.showTextInCloudPanel = function(contentToShow) {
 window.exportAgenda = function() {
 
 	window.agendaCsvString = '';
-	var agendaCsvHeader = 'Subject,Start Date,Start Time,End Date,End Time,All Day Event,Description,Location,Private\n';
+	var agendaCsvHeader = 'Subject,Start Date,Start Time,End Date,End Time,All Day Event,Description,Location,Private\r\n';
 	window.agendaCsvString += agendaCsvHeader;
 	//console.log('window.agendaCsvString: ' + window.agendaCsvString);
 
@@ -146,7 +149,7 @@ window.exportAgenda = function() {
 						//console.log('sessionDetailObj: ', sessionDetailObj);
 						var sessionDetailCsvString = window.sessionCsvFromSessionDetails(sessionDetailObj);
 						//console.log('sessionDetailCsvString: ', sessionDetailCsvString);
-						window.agendaCsvString += sessionDetailCsvString + '\n';
+						window.agendaCsvString += sessionDetailCsvString + '\r\n';
 						
 					}
 				}
