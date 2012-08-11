@@ -13,7 +13,7 @@ How To Use
 
 1. Bookmark the link below, either by dragging it into your bookmark bar or by right-clicking on it.
 
-> <a href="javascript:function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='http://yourjavascript.com/8152102161/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();">Agenda Export Applet</a>
+<a href="javascript:function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='http://yourjavascript.com/8152102161/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();">Agenda Export Applet</a>
 
 *Note: If you don't want to use the bookmarklet, copy the source code into a Javascript debugger, such as Firebug, and execute it anonymously on the page below.*
 
