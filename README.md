@@ -15,7 +15,7 @@ Two methods of installing. The second method doesn't work on GitHub, so you will
 
 - Create a new bookmark in your browser (many ways to do it). Use the following values:
     - Name = 'Agenda Export Applet'
-    - Location = 'javascript:function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();'
+    - Location = 'javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();'
 
 - *(Dang, I can't make the bookmarklet link pass through GitHub markdown. Maybe because of the Javascript 'href'. Anyone know how?)* Bookmark the link below, either by dragging it into your bookmark bar or by right-clicking on it.
 
