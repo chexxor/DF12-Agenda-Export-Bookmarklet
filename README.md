@@ -52,7 +52,7 @@ Once you have the export file from the Dreamforce app, we can import it into Goo
 
 3. Select **Import calendar**
 
-![Click 'Import calendars'](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/images/SelectImport.png "Select 'Import calenders'")
+![Click 'Import calendars'](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/SelectImport.png "Select 'Import calenders'")
 
 4. Click **Choose file** and find the file that contains your events, then click **Open**.
 
