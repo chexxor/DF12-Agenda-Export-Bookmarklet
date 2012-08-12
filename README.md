@@ -17,7 +17,7 @@ Two methods of installing. The second method doesn't work on GitHub, so you will
     - Name = 'Agenda Export Applet'
     - Location = 'javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();'
 
-![Add the bookmark](/chexxor/DF12-Agenda-Export-Bookmarklet/blob/master/images/AddBookmark.png "Add Bookmark")
+![Add the bookmark](/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/AddBookmark.png "Add Bookmark")
 
 - *(Dang, I can't make the bookmarklet link pass through GitHub markdown. Maybe because of the Javascript 'href'. Anyone know how?)* Bookmark the link below, either by dragging it into your bookmark bar or by right-clicking on it.
 
@@ -29,18 +29,18 @@ Two methods of installing. The second method doesn't work on GitHub, so you will
 ##Getting Export File
 1. Once you have the bookmarklet, log in to the Dreamforce 2012 web app, and navigate to the Calendar View page. Here's the link to which I refer: [https://dreamevent.my.salesforce.com/apex/CalendarView](https://dreamevent.my.salesforce.com/apex/CalendarView).
 
-![Go to CalendarView page](/chexxor/DF12-Agenda-Export-Bookmarklet/blob/master/images/CalendarView.png "Go to CalendarView page")
+![Go to CalendarView page](/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/CalendarView.png "Go to CalendarView page")
 
 2. On the Calendar View page, activate the bookmarklet. A loading icon should appear while the app loads your enrolled events. When it receives the response and processes the results, a side panel should slide into view.
 
-![Activate the bookmark on the CalendarView page](/chexxor/DF12-Agenda-Export-Bookmarklet/blob/master/images/BookmarkInBar.png "Activate the Bookmark")
+![Activate the bookmark on the CalendarView page](/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/BookmarkInBar.png "Activate the Bookmark")
 
 3. Create a blank text file on your computer, called "AgendaExport.csv". (On Windows, please use Notepad for this.)
 
 4. Copy the wall of text from the panel in the Dreamforce web app and paste it into the AgendaExport.csv file. Save it.
 
-![Copy the wall of text](/chexxor/DF12-Agenda-Export-Bookmarklet/blob/master/images/SelectText.png "Select wall of text")
-![Save as AgendaExport.csv](/chexxor/DF12-Agenda-Export-Bookmarklet/blob/master/images/AgendaExportFile.png "Save as AgendaExport.csv file")
+![Copy the wall of text](/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/SelectText.png "Select wall of text")
+![Save as AgendaExport.csv](/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/AgendaExportFile.png "Save as AgendaExport.csv file")
 
 
 ##Importing into Google Calendar
@@ -52,13 +52,13 @@ Once you have the export file from the Dreamforce app, we can import it into Goo
 
 3. Select **Import calendar**
 
-![Click 'Import calendars'](/chexxor/DF12-Agenda-Export-Bookmarklet/blob/master/images/SelectImport.png "Select 'Import calenders'")
+![Click 'Import calendars'](/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/SelectImport.png "Select 'Import calenders'")
 
 4. Click **Choose file** and find the file that contains your events, then click **Open**.
 
 5. Select the Google Calendar where you'd like to import events, then click **Import**.
 
-![Select Export File](/chexxor/DF12-Agenda-Export-Bookmarklet/blob/master/images/SelectExportFile.png "Select AgendaExport.csv and click 'Import'")
+![Select Export File](/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/SelectExportFile.png "Select AgendaExport.csv and click 'Import'")
 
 *Note: Importing the same file more than once may create duplicate events.*
 
