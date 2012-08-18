@@ -13,15 +13,21 @@ How To Use
 
 Two methods of installing. The second method doesn't work on GitHub, so you will have to use the first method.
 
+###For CSV export (only Google Calendar):
+
 - Create a new bookmark in your browser (many ways to do it). Use the following values:
-    - Name = 'Agenda Export Applet'
-    - Location = 'javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();'
+    - Name = Agenda Export Applet
+    - Location = javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();
+
+###For iCal export (most calendars):
+
+- Create a new bookmark in your browser (many ways to do it). Use the following values:
+    - Name = Agenda Export Applet
+    - Location = javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/ical-export/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();
 
 ![Add the bookmark](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/AddBookmark.png "Add Bookmark")
 
-- *(Dang, I can't make the bookmarklet link pass through GitHub markdown. Maybe because of the Javascript 'href'. Anyone know how?)* Bookmark the link below, either by dragging it into your bookmark bar or by right-clicking on it.
-
-<a href="javascript:function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();">Agenda Export Applet</a>
+- *(Dang, I can't make the bookmarklet link pass through GitHub markdown. Maybe because of the Javascript 'href'. Anyone know how?)*
 
 *Note: If you don't want to use the bookmarklet, copy the source code into a Javascript debugger, such as Firebug, and execute it anonymously on the page below.*
 
@@ -35,9 +41,11 @@ Two methods of installing. The second method doesn't work on GitHub, so you will
 
 ![Activate the bookmark on the CalendarView page](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/BookmarkInBar.png "Activate the Bookmark")
 
-3. Create a blank text file on your computer, called "AgendaExport.csv". (On Windows, please use Notepad for this.)
+3. Create a blank text file on your computer. (On Windows, please use Notepad for this.)
+- If CSV export, call it "AgendaExport.csv".
+- If iCal export, call it "AgendaExport.ical".
 
-4. Copy the wall of text from the panel in the Dreamforce web app and paste it into the AgendaExport.csv file. Save it.
+4. Copy the wall of text from the panel in the Dreamforce web app and paste it into the AgendaExport.csv or AgendaExport.ical file. Save it.
 
 ![Copy the wall of text](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/images/SelectText.png "Select wall of text")
 ![Save as AgendaExport.csv](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/AgendaExportFile.png "Save as AgendaExport.csv file")
