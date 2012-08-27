@@ -11,19 +11,21 @@ How To Use
 
 ##Installation
 
-Two methods of installing. The second method doesn't work on GitHub, so you will have to use the first method.
-
-###For CSV export (only Google Calendar):
-
-- Create a new bookmark in your browser (many ways to do it). Use the following values:
-    - Name = Agenda Export Applet
-    - Location = javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();
+Two methods of installing.
 
 ###For iCal export (most calendars):
 
 - Create a new bookmark in your browser (many ways to do it). Use the following values:
     - Name = Agenda Export Applet
-    - Location = javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/ical-export/AgendaExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();
+    - Location = javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaIcalExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();
+
+###For CSV export (only Google Calendar):
+
+_Note: This CSV file does not record the timezone of the event, so you have to change your calendar's timezone before importing._
+- Create a new bookmark in your browser (many ways to do it). Use the following values:
+    - Name = Agenda Export Applet
+    - Location = javascript:(function(){%20%20%20_my_script=document.createElement('SCRIPT');%20%20%20_my_script.type='text/javascript';%20%20%20_my_script.src='https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/AgendaGoogleCsvExportApplet_min.js?';%20%20%20document.getElementsByTagName('head')[0].appendChild(_my_script);%20})();
+
 
 ![Add the bookmark](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/AddBookmark.png "Add Bookmark")
 
