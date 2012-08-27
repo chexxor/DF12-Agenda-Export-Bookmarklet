@@ -1,7 +1,7 @@
-What This Is
+What Is It
 ============
 
-Export your DF12 Session Agenda in a Google Calendar-compatible CSV format.
+Export your DF12 Session Agenda in either iCal format or a Google Calendar-compatible CSV format.
 
 
 
