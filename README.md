@@ -34,21 +34,10 @@ Two methods of installing. The second method doesn't work on GitHub, so you will
 
 ##Getting Export File
 1. Once you have the bookmarklet, log in to the Dreamforce 2012 web app, and navigate to the Calendar View page. Here's the link to which I refer: [https://dreamevent.my.salesforce.com/apex/CalendarView](https://dreamevent.my.salesforce.com/apex/CalendarView).
-
 ![Go to CalendarView page](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/CalendarView.png "Go to CalendarView page")
 
-2. On the Calendar View page, activate the bookmarklet. A loading icon should appear while the app loads your enrolled events. When it receives the response and processes the results, a side panel should slide into view.
-
+2. On the Calendar View page, activate the bookmarklet. A loading icon should appear while the app loads your enrolled events. When it receives the response and processes the results, your browser will automatically save the export file.
 ![Activate the bookmark on the CalendarView page](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/BookmarkInBar.png "Activate the Bookmark")
-
-3. Create a blank text file on your computer. (On Windows, please use Notepad for this.)
-- If CSV export, call it "AgendaExport.csv".
-- If iCal export, call it "AgendaExport.ical".
-
-4. Copy the wall of text from the panel in the Dreamforce web app and paste it into the AgendaExport.csv or AgendaExport.ical file. Save it.
-
-![Copy the wall of text](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/images/SelectText.png "Select wall of text")
-![Save as AgendaExport.csv](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/AgendaExportFile.png "Save as AgendaExport.csv file")
 
 
 ##Importing into Google Calendar
@@ -66,9 +55,9 @@ Once you have the export file from the Dreamforce app, we can import it into Goo
 
 5. Select the Google Calendar where you'd like to import events, then click **Import**.
 
-![Select Export File](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/SelectExportFile.png "Select AgendaExport.csv and click 'Import'")
+![Select Export File](https://raw.github.com/chexxor/DF12-Agenda-Export-Bookmarklet/master/images/SelectExportFile.png "Select AgendaGoogleCsvExport.csv or AgendaIcalExport.ical and click 'Import'")
 
-*Note: Importing the same file more than once may create duplicate events.*
+*Note: Importing the same file more than once may create duplicate events. Therefore, you might want to create a new calendar (method varies by application) in which to import your Dreamforce 2012 events. This makes it easy to delete events and re-import them later.*
 
 
 ##Problems?
