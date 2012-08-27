@@ -637,7 +637,8 @@ window.exportAgendaIcal = function() {
 			
 			window.agendaIcalString = icalTemplate.replace(TOKEN_ICAL_BODY_REGEX, sessionVeventListString);
 
-			//window.showTextInCloudPanel(window.agendaIcalString);
+			window.showTextInCloudPanel(window.agendaIcalString);
+			//Call FileSaver.js method: 'saveAs'
 			var bb = new BlobBuilder;
 			bb.append(window.agendaIcalString);
 			saveAs(bb.getBlob("text/plain;charset=utf-8"), "AgendaIcalExport.ical");

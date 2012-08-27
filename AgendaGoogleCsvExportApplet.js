@@ -502,7 +502,7 @@ window.exportGoogleCsvAgenda = function() {
 				}
 			}
 
-			//window.showTextInCloudPanel(window.agendaCsvString);
+			window.showTextInCloudPanel(window.agendaCsvString);
 			//Call FileSaver.js method: 'saveAs'
 			var bb = new BlobBuilder;
 			bb.append(window.agendaCsvString);
