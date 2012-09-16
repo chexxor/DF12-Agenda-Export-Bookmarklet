@@ -495,7 +495,8 @@ window.sessionVeventStringFromSessionDetails = function(sessionDetailObj) {
 	//code: "http://goo.gl/wAki9", day:"09/19/2012", endTime:"01:00PM", id:"a093000000VhYKSAA3",
 	//industryTags:[], itemType:"Dreamforce", level:"Intermediate", name:"Creating and Using Visualforce Mobile Components",
 	//openCapacity:258, productTags:[], roleTags:[],
-	//room:Object { id="a1930000001YZbdAAG", location="Moscone Center West", mapUrl="https://secure.sfdcstat.../maps/7_Camp_M_West.png", more...},
+	//room:Object { id="a1930000001YZbdAAG", location="Moscone Center West",
+	//  mapUrl="https://secure.sfdcstat.../maps/7_Camp_M_West.png", name="2008"},
 	//shortDescription:"Tablets and smartphones...ent to fill your needs.",
 	//speakers:[Object { Account="Sundog", name="Alex Berg", id="a0A3000000SXCFBEA5" }]
 	//startTime:"12:00PM", userBookmarked:false, userCanRegister:true, userCanRemove:true, userIsRegistered:true
@@ -537,7 +538,8 @@ window.sessionVeventStringFromSessionDetails = function(sessionDetailObj) {
 		sessionVeventRowArray.push(descriptionRow);
 	}
 	if (sessionDetailObj.room && sessionDetailObj.room.location) {
-		var locationRow = 'LOCATION:' + window.encodeSpecialChars(sessionDetailObj.room.location);
+		var locationRow = 'LOCATION:' + window.encodeSpecialChars(sessionDetailObj.room.location)
+			+ ', ' + window.encodeSpecialChars(sessionDetailObj.room.name);
 		sessionVeventRowArray.push(locationRow);
 	}
 	if (sessionDetailObj.code) {
